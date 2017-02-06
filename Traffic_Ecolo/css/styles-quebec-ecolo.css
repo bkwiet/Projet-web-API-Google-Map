@@ -1,0 +1,101 @@
+body {
+	background-color:#FFFFCF;
+}
+h1 {
+	color:navy;
+	font-size:20px;
+	text-align:center;
+	border-bottom:2px ridge black;
+}
+/* CSS pour la zone de contr�le */
+/* ============================ */
+#msgConfirm {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	font-style:italic;
+	background-color:#eee;
+	padding:3px 6px 0px 5px;
+	min-height:20px;
+}
+#msgConfirm button{
+	background-color:lightgray;
+	margin-top:0;
+	margin-bottom:0;
+	border:1px;
+	margin-left: 10px;
+	max-height:20px;
+}
+.msgSucces {
+	color:#249F1D;
+}
+.msgErreur {
+	color:#DF2929;
+}
+#zoneControle {
+	font-weight:bold;
+	min-height:30px;
+	margin:0 0 5px 0;
+}
+#zoneControle button {
+	margin:0 0 0 5px;
+}
+#zoneControle div {
+	float:left;
+	padding-top:3px;
+}
+#zoneControle #lstVehi {
+	list-style-type: none;
+	float:left;
+	margin:0;
+	padding:0;
+	border:1px solid #333;
+}
+#zoneControle #lstVehi li {
+	float:left;
+	color:#eee;
+	line-height:25px;
+	text-align:center;
+	border:1px solid #333;
+	margin:0;
+	padding:0;
+	width:25px;
+	line-height:25px;
+	cursor:pointer;
+}
+#zoneControle #lstVehi li button{
+	margin:0;
+	padding:0;
+	width:25px;
+}
+#zoneControle .affiche {
+	background-color:#28EF1D;
+}
+#zoneControle .masque {
+	background-color:red;
+}
+
+/* CSS pour les �l�ments de la carte */
+/* ================================= */
+#divCarteGoogle {
+	border:5px ridge #CCC;
+	background-color:gray;
+	height:450px;
+	margin:0 auto;
+}
+.infoWindow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height:180px;
+	width:290px;
+}
+.infoWindow .empl {
+	font-weight:bold;
+}
+.infoWindow p{
+	margin:0;
+	padding:0;
+}
+.infoWindow .photoMag {
+	display:block;
+}

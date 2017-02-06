@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+ 
+<html xml:lang="fr-ca" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Solution du TP-2 420-526-FX :: CRECEL Xavier</title>
+	
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles-quebec-ecolo.css" media="screen" />
+
+	<!-- Script permettant de charger l'API de Google Map V3 -->
+ 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	
+	<!-- Inclusion de fonctions utilitaires pour le DOM Core -->
+	<script type="text/javascript" src="js/util-dom.js"></script>
+	<!-- Inclusion de la fonctions utilitaire pour ouvrir une nouvelle fenêtre -->
+	<script type="text/javascript" src="js/fenetre.js"></script>
+	
+	<!-- Inclusion pour l'initialisation et la gestion de l'interface -->
+	<script type="text/javascript" src="js/init-interface.js"></script>
+	<!-- Fonctions et variables pour la gestions des centres -->
+	<script type="text/javascript" src="js/centres.js"></script>
+	<!-- Fonctions et variables pour la gestions des véhicules -->
+	<script type="text/javascript" src="js/vehicules.js"></script>
+</head>
+
+<body>
+
+<h1>Québec Écolo : Surveillance du parc de véhicules</h1>
+
+<div id="zoneControle">
+	<div>Véhicules : </div>
+	<ul id="lstVehi">
+		<!-- Les options de cette liste doivent être générées dynamiquement avec le DOM Core (retirez ce commentaire) -->
+	</ul>
+	<div>
+		<button type="button" id="btnAfficherTous" onclick="garneau.qe.AfficherMarkerVehicules()">Afficher tous</button>
+		<button type="button" id="btnMasquerTous" onclick="garneau.qe.MasquerMarkerVehicules()">Masquer tous</button>
+		<button type="button" id="btnAfficherTraffic" onclick="afficherMasquerTrafic()">Afficher traffic</button>
+	</div>
+</div>
+
+<div id="msgConfirm"></div>
+
+<div id="divCarteGoogle"></div>
+
+</body>
+</html>
